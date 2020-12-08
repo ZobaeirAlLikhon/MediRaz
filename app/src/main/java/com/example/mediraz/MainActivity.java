@@ -1,5 +1,6 @@
 package com.example.mediraz;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,11 +14,12 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.example.mediraz.fragment.HomeFragment;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private Fragment selectedFragment;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.nav_open,R.string.nav_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        //listener on navigation view
+
+       navigationView.setNavigationItemSelectedListener(this);
 
 
 
@@ -82,5 +88,13 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.mainFragmentContainer, selectedFragment).commit();
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            //navigation menu operation here...
+        }
+        return true;
     }
 }
