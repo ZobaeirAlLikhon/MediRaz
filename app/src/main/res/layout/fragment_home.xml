@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.HomeFragment">
 
@@ -166,7 +172,6 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/clinicID"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
@@ -197,7 +202,7 @@
                                 android:id="@+id/clinicIV"
                                 android:layout_width="65dp"
                                 android:layout_height="65dp"
-                                android:src="@mipmap/doc_appoinment"
+                                android:src="@mipmap/ic_launcher"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -206,7 +211,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="@string/doc_appoinment"
+                                android:text="@string/Clinic_Service"
                                 app:layout_constraintEnd_toEndOf="@id/clinicIV"
                                 app:layout_constraintStart_toStartOf="@id/clinicIV"
                                 app:layout_constraintTop_toBottomOf="@+id/clinicIV" />
@@ -238,7 +243,7 @@
                                 android:id="@+id/bloodBankIV"
                                 android:layout_width="65dp"
                                 android:layout_height="65dp"
-                                android:src="@mipmap/diagonstic_service"
+                                android:src="@mipmap/ic_launcher"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -247,7 +252,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="@string/digo_serv"
+                                android:text="@string/Blood_bank_Service"
                                 app:layout_constraintEnd_toEndOf="@id/bloodBankIV"
                                 app:layout_constraintStart_toStartOf="@id/bloodBankIV"
                                 app:layout_constraintTop_toBottomOf="@+id/bloodBankIV" />
@@ -278,7 +283,7 @@
                                 android:id="@+id/homeServiceIV"
                                 android:layout_width="65dp"
                                 android:layout_height="65dp"
-                                android:src="@mipmap/medicine_service"
+                                android:src="@mipmap/ic_launcher"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -288,10 +293,400 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="@string/medicine_serv"
+                                android:text="@string/Home_Service"
                                 app:layout_constraintEnd_toEndOf="@id/homeServiceIV"
                                 app:layout_constraintStart_toStartOf="@id/homeServiceIV"
                                 app:layout_constraintTop_toBottomOf="@+id/homeServiceIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/emergencyServiceCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="LOLLIPOP">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/emergencyServiceIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Emergency_Service"
+                                app:layout_constraintEnd_toEndOf="@id/emergencyServiceIV"
+                                app:layout_constraintStart_toStartOf="@id/emergencyServiceIV"
+                                app:layout_constraintTop_toBottomOf="@+id/emergencyServiceIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sergicalKitsCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="LOLLIPOP">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/sergicalKitsIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Sergical_Kits"
+                                app:layout_constraintEnd_toEndOf="@id/sergicalKitsIV"
+                                app:layout_constraintStart_toStartOf="@id/sergicalKitsIV"
+                                app:layout_constraintTop_toBottomOf="@+id/sergicalKitsIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/otCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="lollipop">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/otIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/OT"
+                                app:layout_constraintEnd_toEndOf="@id/otIV"
+                                app:layout_constraintStart_toStartOf="@id/otIV"
+                                app:layout_constraintTop_toBottomOf="@+id/otIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardiologyCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="LOLLIPOP">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/cardiologyIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Cardiology"
+                                app:layout_constraintEnd_toEndOf="@id/cardiologyIV"
+                                app:layout_constraintStart_toStartOf="@id/cardiologyIV"
+                                app:layout_constraintTop_toBottomOf="@+id/cardiologyIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/surgeryCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="LOLLIPOP">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/surgeryIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Surgery"
+                                app:layout_constraintEnd_toEndOf="@id/surgeryIV"
+                                app:layout_constraintStart_toStartOf="@id/surgeryIV"
+                                app:layout_constraintTop_toBottomOf="@+id/surgeryIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/medicineCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="lollipop">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/medicineIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Medicine"
+                                app:layout_constraintEnd_toEndOf="@id/medicineIV"
+                                app:layout_constraintStart_toStartOf="@id/medicineIV"
+                                app:layout_constraintTop_toBottomOf="@+id/medicineIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/skinVdCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="LOLLIPOP">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/skinVdIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Skin_VD"
+                                app:layout_constraintEnd_toEndOf="@id/skinVdIV"
+                                app:layout_constraintStart_toStartOf="@id/skinVdIV"
+                                app:layout_constraintTop_toBottomOf="@+id/skinVdIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/psychiatryCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="LOLLIPOP">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/psychiatryIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Psychiatry"
+                                app:layout_constraintEnd_toEndOf="@id/psychiatryIV"
+                                app:layout_constraintStart_toStartOf="@id/psychiatryIV"
+                                app:layout_constraintTop_toBottomOf="@+id/psychiatryIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/orthopedicCV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:elevation="16dp"
+                        android:focusable="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        tools:targetApi="lollipop">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/orthopedicIV"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@mipmap/ic_launcher"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Orthopedic"
+                                app:layout_constraintEnd_toEndOf="@id/orthopedicIV"
+                                app:layout_constraintStart_toStartOf="@id/orthopedicIV"
+                                app:layout_constraintTop_toBottomOf="@+id/orthopedicIV" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -304,3 +699,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,10 +1,26 @@
 <resources>
     <string name="app_name">MediRaz</string>
-    <string name="doc_appoinment">Doctor Appoinment</string>
-    <string name="digo_serv">Diagonstic Service</string>
-    <string name="medicine_serv">Medicine Service</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+
+
+    //home menu name
+    <string name="doc_appoinment">Doctor Appoinment</string>
+    <string name="digo_serv">Diagonstic Service</string>
+    <string name="medicine_serv">Medicine Service</string>
+    <string name="Clinic_Service">Clinic Service</string>
+    <string name="Blood_bank_Service">Blood bank Service</string>
+    <string name="Home_Service">Home Service</string>
+    <string name="Emergency_Service">Emergency Service</string>
+    <string name="Sergical_Kits">Sergical Kits</string>
+    <string name="OT">OT</string>
+    <string name="Cardiology">Cardiology</string>
+    <string name="Surgery">Surgery</string>
+    <string name="Medicine">Medicine</string>
+    <string name="Skin_VD">Skin &amp; VD </string>
+    <string name="Psychiatry">Psychiatry</string>
+    <string name="Orthopedic">Orthopedic</string>
 </resources>
