@@ -38,14 +38,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
        setSupportActionBar(toolbar);
 
        //set drawer
-        navigationView.bringToFront();
+      //  navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.nav_open,R.string.nav_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
         //listener on navigation view
-
-       navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(this);
 
 
 
